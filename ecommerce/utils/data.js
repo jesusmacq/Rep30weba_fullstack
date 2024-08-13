@@ -12,14 +12,14 @@ export const data = {
             title: 'Product 2',
             description: 'This is the second product',
             price: 200,
-            image: '/orios,jpg'   
+            image: '/orios.jpg'   
         },
         {
             id: 3,
             title: 'Product 3',
             description: 'This is the Third product',
             price: 300,
-            image: '/mermelada,jpg'   
+            image: '/mermelada.jpg'   
         },
         {
             id: 4,
@@ -40,21 +40,21 @@ export const data = {
             title: 'Product 6',
             description: 'This is the sixth product',
             price: 600,
-            image: '/acetunas.jpg'   
+            image: '/aceitunas.jpg'   
         },
         {
             id: 7,
             title: 'Product 7',
             description: 'This is the seventh product',
             price: 700,
-            image: '/verduras'   
+            image: '/verduras.jpg'   
         },
         {
             id: 8,
             title: 'Product 8',
             description: 'This is the eigth product',
             price: 800,
-            image: '/nutela'   
+            image: '/nutela.jpg'   
         }                           
     ]
 }
