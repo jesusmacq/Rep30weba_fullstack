@@ -7,7 +7,7 @@
 // que no haya conflictos con otros archivos en el mismo directorio o proyecto.
 import React from 'react'
 import { useRouter } from 'next/router'
-import { data } from '..NPM /../utils/data'
+import { data } from '../../utils/data'
 const ProductPage = () => {
     const router = useRouter() //es un hook de next
     const { id } = router.query //es un objeto que contiene la información de la ruta actual
