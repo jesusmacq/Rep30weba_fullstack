@@ -9,17 +9,17 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import { data } from '../../utils/data'
 const ProductPage = () => {
-  const router = useRouter() //es un hook de next
-  const { id } = router.query //es un objeto que contiene la información de la ruta actual
-  const product = data.products.find((product) => product.id === parseInt(id))
-  if (!product) {
+    const router = useRouter() //es un hook de next
+    const { id } = router.query //es un objeto que contiene la información de la ruta actual
+    const product = data.products.find((product) => product.id === parseInt(id))
+    if (!product) {
         return <div> 404 | Product not Found </div>
     }
-  return (
-    <div>
-      {`Product: id - ${id}`}	
-    </div>
-  )
+    return (
+        <div>
+            {`Product: id - ${id}`}
+        </div>
+    )
 }
 
 export default ProductPage
