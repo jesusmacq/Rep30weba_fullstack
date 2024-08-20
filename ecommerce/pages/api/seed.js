@@ -16,6 +16,6 @@ export default router.handler({
     res.status(err.statusCode || 500).end(err.message);
   },
   onNoMatch: (req, res) => {
-    res.status(404).end('pAGE NOT FOUND');
+    res.status(404).end('PAGE NOT FOUND');
   }
 });
