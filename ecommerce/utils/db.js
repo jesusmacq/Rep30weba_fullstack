@@ -1,12 +1,12 @@
-//Conexxion a la base de datos
-import mongoose from 'mongoose' 
+//Conexion a la base de datos
+import mongoose from "mongoose"; 
 
 const connection = {}
 
 async function connect() {
     if(connection.isConnected){ //Si ya está conectado poner return
-        console.log("Conexión Exitosa 🚀")
-        return
+        console.log("Conexión Exitosa 🚀");
+        return;
     }
     if(mongoose.connections.length > 0){ //Si ya hay coneciones
         connection.isConnected = mongoose.connections[0].readyState; //Si la conexión es 1
