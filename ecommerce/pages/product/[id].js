@@ -36,6 +36,7 @@ const ProductPage = () => {
                 <Stack spacing={{base: 6, md: 10}}>
                     <Box>
                         <Heading
+                        lineHeight={1.1}
                         fontWeight={600}
                         fontSize={{base: '2xl', sm: '4xl', lg: '4xl'}}
                         >{product.title}</Heading>
@@ -53,12 +54,14 @@ const ProductPage = () => {
                         >
                             {product.description}
                         </Text>
-                        <Flex alignItems={'end'}>
+                        <Flex  flexGrow={1} alignItems={'end'}>
                             <Button
                             rounded={'md'} w={'full'} mt={8} size={'md'} py={'7'}
                             bg={useColorModeValue('gray.900', 'gray.50')}
                             color={useColorModeValue('white', 'gray.900')}
                             textTransform={'uppercase'}
+                            _hover={{bg: 'green.400'}}
+                            _focus={{boxShadow:'outline' } }
                             >
                                 Add to Cart
                             </Button>
